@@ -1,0 +1,602 @@
+[{
+    "id": 1,
+    "author": "Odell Swatradge",
+    "book_name": "Wind Will Carry Us, The (Bad ma ra khahad bord)",
+    "pages": 601,
+    "publish_year": 2005
+  }, {
+    "id": 2,
+    "author": "Joseito Teck",
+    "book_name": "Education of Little Tree, The",
+    "pages": 932,
+    "publish_year": 2003
+  }, {
+    "id": 3,
+    "author": "Lombard McGinnell",
+    "book_name": "Dad Savage",
+    "pages": 791,
+    "publish_year": 1992
+  }, {
+    "id": 4,
+    "author": "Jesse McNae",
+    "book_name": "Night of the Iguana, The",
+    "pages": 473,
+    "publish_year": 2000
+  }, {
+    "id": 5,
+    "author": "Harrison Overill",
+    "book_name": "Killer Holiday",
+    "pages": 198,
+    "publish_year": 2000
+  }, {
+    "id": 6,
+    "author": "Rockey Edlin",
+    "book_name": "Lonely Wife, The (Charulata)",
+    "pages": 651,
+    "publish_year": 2003
+  }, {
+    "id": 7,
+    "author": "Morna Vellender",
+    "book_name": "The 39 Steps",
+    "pages": 977,
+    "publish_year": 2013
+  }, {
+    "id": 8,
+    "author": "Petunia Pakenham",
+    "book_name": "Maradona by Kusturica",
+    "pages": 858,
+    "publish_year": 1998
+  }, {
+    "id": 9,
+    "author": "Bondon Kennford",
+    "book_name": "House of Games",
+    "pages": 255,
+    "publish_year": 2010
+  }, {
+    "id": 10,
+    "author": "Barrie Fair",
+    "book_name": "Children of the Corn V: Fields of Terror",
+    "pages": 472,
+    "publish_year": 2005
+  }, {
+    "id": 11,
+    "author": "Vincenz Rosso",
+    "book_name": "Like Sunday, Like Rain",
+    "pages": 304,
+    "publish_year": 1995
+  }, {
+    "id": 12,
+    "author": "Ashla Rimour",
+    "book_name": "Starcrash (a.k.a. Star Crash)",
+    "pages": 779,
+    "publish_year": 1994
+  }, {
+    "id": 13,
+    "author": "Patric Huggins",
+    "book_name": "Waterloo",
+    "pages": 943,
+    "publish_year": 2009
+  }, {
+    "id": 14,
+    "author": "Hadlee Cafe",
+    "book_name": "Hangover Square",
+    "pages": 571,
+    "publish_year": 1996
+  }, {
+    "id": 15,
+    "author": "Shamus Switland",
+    "book_name": "Love Letter ",
+    "pages": 385,
+    "publish_year": 2009
+  }, {
+    "id": 16,
+    "author": "Janos Gianullo",
+    "book_name": "Look",
+    "pages": 931,
+    "publish_year": 1984
+  }, {
+    "id": 17,
+    "author": "Avis MacKereth",
+    "book_name": "Mickey's The Prince and the Pauper",
+    "pages": 806,
+    "publish_year": 2003
+  }, {
+    "id": 18,
+    "author": "Rennie Mulqueen",
+    "book_name": "Railway Children, The",
+    "pages": 418,
+    "publish_year": 2006
+  }, {
+    "id": 19,
+    "author": "Ellissa Stemson",
+    "book_name": "Pennies from Heaven",
+    "pages": 511,
+    "publish_year": 2002
+  }, {
+    "id": 20,
+    "author": "Denys Cromley",
+    "book_name": "Horrible Bosses 2",
+    "pages": 602,
+    "publish_year": 1998
+  }, {
+    "id": 21,
+    "author": "Dayna Sicily",
+    "book_name": "Abe Lincoln in Illinois",
+    "pages": 962,
+    "publish_year": 1994
+  }, {
+    "id": 22,
+    "author": "Tish Matthisson",
+    "book_name": "Mr. Morgan's Last Love",
+    "pages": 114,
+    "publish_year": 2004
+  }, {
+    "id": 23,
+    "author": "Hugues Guiness",
+    "book_name": "Decoys 2: Alien Seduction ",
+    "pages": 388,
+    "publish_year": 2011
+  }, {
+    "id": 24,
+    "author": "Reggi Barnet",
+    "book_name": "Oasis",
+    "pages": 585,
+    "publish_year": 1992
+  }, {
+    "id": 25,
+    "author": "Bond Ashtonhurst",
+    "book_name": "Cold Mountain",
+    "pages": 879,
+    "publish_year": 1999
+  }, {
+    "id": 26,
+    "author": "Rossy Tilbrook",
+    "book_name": "Brood, The",
+    "pages": 111,
+    "publish_year": 2000
+  }, {
+    "id": 27,
+    "author": "Jacqueline Jikovsky",
+    "book_name": "Adventures of Huckleberry Finn, The",
+    "pages": 358,
+    "publish_year": 1999
+  }, {
+    "id": 28,
+    "author": "Malinda Pepperd",
+    "book_name": "1941",
+    "pages": 303,
+    "publish_year": 2003
+  }, {
+    "id": 29,
+    "author": "Patrizius Althrope",
+    "book_name": "Extraordinary Adventures of Mr. West in the Land of the Bolsheviks, The (Neobychainye priklyucheniya mistera Vesta v strane bolshevikov)",
+    "pages": 849,
+    "publish_year": 1986
+  }, {
+    "id": 30,
+    "author": "Jeannette Seagrove",
+    "book_name": "What Ever Happened to Baby Jane?",
+    "pages": 417,
+    "publish_year": 1995
+  }, {
+    "id": 31,
+    "author": "Major Laidler",
+    "book_name": "Europa Report",
+    "pages": 100,
+    "publish_year": 2006
+  }, {
+    "id": 32,
+    "author": "Dulcy Grahlman",
+    "book_name": "Whity",
+    "pages": 546,
+    "publish_year": 2011
+  }, {
+    "id": 33,
+    "author": "Forester Kanter",
+    "book_name": "Devil's Knot",
+    "pages": 393,
+    "publish_year": 1995
+  }, {
+    "id": 34,
+    "author": "Anatole Duddridge",
+    "book_name": "Saint Joan",
+    "pages": 956,
+    "publish_year": 1995
+  }, {
+    "id": 35,
+    "author": "Cary Gosford",
+    "book_name": "Vääpeli Körmy ja marsalkan sauva",
+    "pages": 476,
+    "publish_year": 2007
+  }, {
+    "id": 36,
+    "author": "Chester Bondley",
+    "book_name": "True Heart Susie",
+    "pages": 863,
+    "publish_year": 2009
+  }, {
+    "id": 37,
+    "author": "Juanita Shallcrass",
+    "book_name": "Radiohead: Meeting People Is Easy",
+    "pages": 179,
+    "publish_year": 2008
+  }, {
+    "id": 38,
+    "author": "Lelia Gullam",
+    "book_name": "Don't Give Up the Ship",
+    "pages": 409,
+    "publish_year": 1992
+  }, {
+    "id": 39,
+    "author": "Ferdie Hulett",
+    "book_name": "Ballast",
+    "pages": 509,
+    "publish_year": 1999
+  }, {
+    "id": 40,
+    "author": "Phyllys La Padula",
+    "book_name": "Valley Girl",
+    "pages": 960,
+    "publish_year": 2010
+  }, {
+    "id": 41,
+    "author": "Bondie Smaridge",
+    "book_name": "Two Girls and a Sailor",
+    "pages": 351,
+    "publish_year": 2010
+  }, {
+    "id": 42,
+    "author": "Tracy Hillburn",
+    "book_name": "Industrial Symphony No. 1: The Dream of the Brokenhearted",
+    "pages": 580,
+    "publish_year": 2006
+  }, {
+    "id": 43,
+    "author": "Leigh Spyby",
+    "book_name": "This Is England",
+    "pages": 214,
+    "publish_year": 1997
+  }, {
+    "id": 44,
+    "author": "Emmott Speller",
+    "book_name": "Wiz, The",
+    "pages": 863,
+    "publish_year": 1993
+  }, {
+    "id": 45,
+    "author": "Allene Kenvin",
+    "book_name": "Case Against 8, The",
+    "pages": 282,
+    "publish_year": 1995
+  }, {
+    "id": 46,
+    "author": "Clay Harkins",
+    "book_name": "Mother (Mat)",
+    "pages": 806,
+    "publish_year": 2005
+  }, {
+    "id": 47,
+    "author": "Odette Searjeant",
+    "book_name": "Things We Do For Love (Kaikella rakkaudella)",
+    "pages": 591,
+    "publish_year": 1990
+  }, {
+    "id": 48,
+    "author": "Gavan Rapaport",
+    "book_name": "Mrs. Parker and the Vicious Circle",
+    "pages": 308,
+    "publish_year": 2008
+  }, {
+    "id": 49,
+    "author": "Caro Keward",
+    "book_name": "Living Daylights, The",
+    "pages": 514,
+    "publish_year": 2008
+  }, {
+    "id": 50,
+    "author": "Leanora Menere",
+    "book_name": "Night Nurse",
+    "pages": 570,
+    "publish_year": 1995
+  }, {
+    "id": 51,
+    "author": "Lynda Iacoviello",
+    "book_name": "Deep End of the Ocean, The",
+    "pages": 419,
+    "publish_year": 2012
+  }, {
+    "id": 52,
+    "author": "Odey Draycott",
+    "book_name": "Say It Isn't So",
+    "pages": 739,
+    "publish_year": 2006
+  }, {
+    "id": 53,
+    "author": "Thorndike Craise",
+    "book_name": "WW III: World War III (Der 3. Weltkrieg)",
+    "pages": 487,
+    "publish_year": 2006
+  }, {
+    "id": 54,
+    "author": "Casi Willwood",
+    "book_name": "Pale Flower (Kawaita hana)",
+    "pages": 120,
+    "publish_year": 1998
+  }, {
+    "id": 55,
+    "author": "Kizzee Grimbaldeston",
+    "book_name": "Gunbuster (Top wo Narae)",
+    "pages": 240,
+    "publish_year": 1996
+  }, {
+    "id": 56,
+    "author": "Ellene Nortcliffe",
+    "book_name": "Hobo with a Shotgun",
+    "pages": 325,
+    "publish_year": 2012
+  }, {
+    "id": 57,
+    "author": "Brady Dufton",
+    "book_name": "Reunion",
+    "pages": 538,
+    "publish_year": 1996
+  }, {
+    "id": 58,
+    "author": "Morten Holworth",
+    "book_name": "League of Extraordinary Gentlemen, The (a.k.a. LXG)",
+    "pages": 607,
+    "publish_year": 1993
+  }, {
+    "id": 59,
+    "author": "Kevyn Wolver",
+    "book_name": "Secret Reunion (Ui-hyeong-je)",
+    "pages": 992,
+    "publish_year": 1992
+  }, {
+    "id": 60,
+    "author": "Prentice L'Homme",
+    "book_name": "Shine",
+    "pages": 540,
+    "publish_year": 1990
+  }, {
+    "id": 61,
+    "author": "Bettina MacKilroe",
+    "book_name": "French Cancan",
+    "pages": 948,
+    "publish_year": 2004
+  }, {
+    "id": 62,
+    "author": "Blair Tenant",
+    "book_name": "Easy Virtue",
+    "pages": 143,
+    "publish_year": 2007
+  }, {
+    "id": 63,
+    "author": "Towney Assard",
+    "book_name": "City of God (Cidade de Deus)",
+    "pages": 539,
+    "publish_year": 2000
+  }, {
+    "id": 64,
+    "author": "Mellisa Renshell",
+    "book_name": "Last Circus, The (Balada triste de trompeta) (Sad Trumpet Ballad, A)",
+    "pages": 195,
+    "publish_year": 1991
+  }, {
+    "id": 65,
+    "author": "Johann Tschirasche",
+    "book_name": "Three to Tango",
+    "pages": 752,
+    "publish_year": 2006
+  }, {
+    "id": 66,
+    "author": "Woody Decayette",
+    "book_name": "Holy Man",
+    "pages": 419,
+    "publish_year": 1999
+  }, {
+    "id": 67,
+    "author": "Jocko O'Lyhane",
+    "book_name": "No Time for Nuts",
+    "pages": 139,
+    "publish_year": 2008
+  }, {
+    "id": 68,
+    "author": "Etty Foley",
+    "book_name": "Love Jones",
+    "pages": 473,
+    "publish_year": 2006
+  }, {
+    "id": 69,
+    "author": "Ade Lyddy",
+    "book_name": "The Ghosts in Our Machine",
+    "pages": 180,
+    "publish_year": 1998
+  }, {
+    "id": 70,
+    "author": "Tonya MacFadin",
+    "book_name": "One, The",
+    "pages": 871,
+    "publish_year": 2009
+  }, {
+    "id": 71,
+    "author": "Traver Titley",
+    "book_name": "Here and There (Tamo i ovde)",
+    "pages": 632,
+    "publish_year": 2001
+  }, {
+    "id": 72,
+    "author": "Cassandry Riediger",
+    "book_name": "Flying Swords of Dragon Gate, The (Long men fei jia)",
+    "pages": 567,
+    "publish_year": 1998
+  }, {
+    "id": 73,
+    "author": "Wayland Roskrug",
+    "book_name": "Cutter's Way",
+    "pages": 178,
+    "publish_year": 2001
+  }, {
+    "id": 74,
+    "author": "Starlene Jellis",
+    "book_name": "Wreckers",
+    "pages": 234,
+    "publish_year": 2007
+  }, {
+    "id": 75,
+    "author": "Loralyn Haet",
+    "book_name": "Rock-A-Doodle",
+    "pages": 867,
+    "publish_year": 2001
+  }, {
+    "id": 76,
+    "author": "Julie Manthorpe",
+    "book_name": "Calvary",
+    "pages": 797,
+    "publish_year": 2007
+  }, {
+    "id": 77,
+    "author": "Emilia Newcom",
+    "book_name": "Tao of Steve, The",
+    "pages": 176,
+    "publish_year": 2011
+  }, {
+    "id": 78,
+    "author": "Maureene George",
+    "book_name": "Rory O'Shea Was Here (Inside I'm Dancing)",
+    "pages": 605,
+    "publish_year": 2008
+  }, {
+    "id": 79,
+    "author": "Michale Vlach",
+    "book_name": "The Arrival of Joachim Stiller",
+    "pages": 562,
+    "publish_year": 1999
+  }, {
+    "id": 80,
+    "author": "Hurleigh Sepey",
+    "book_name": "Blob, The",
+    "pages": 212,
+    "publish_year": 2000
+  }, {
+    "id": 81,
+    "author": "Gwendolen Deare",
+    "book_name": "Watchers",
+    "pages": 293,
+    "publish_year": 1991
+  }, {
+    "id": 82,
+    "author": "Merrill Solomon",
+    "book_name": "Tron",
+    "pages": 969,
+    "publish_year": 2006
+  }, {
+    "id": 83,
+    "author": "Jourdan Donnison",
+    "book_name": "Kicking and Screaming",
+    "pages": 111,
+    "publish_year": 1996
+  }, {
+    "id": 84,
+    "author": "Robb Lauder",
+    "book_name": "Tales of Manhattan",
+    "pages": 873,
+    "publish_year": 1985
+  }, {
+    "id": 85,
+    "author": "Evy Whiles",
+    "book_name": "Blood Creek (a.k.a. Town Creek)",
+    "pages": 625,
+    "publish_year": 2011
+  }, {
+    "id": 86,
+    "author": "Verney Sheahan",
+    "book_name": "Jönssonligans största kupp",
+    "pages": 702,
+    "publish_year": 2007
+  }, {
+    "id": 87,
+    "author": "Alexandra Littleover",
+    "book_name": "Black or White",
+    "pages": 347,
+    "publish_year": 1997
+  }, {
+    "id": 88,
+    "author": "Shel Bubbins",
+    "book_name": "Motocrossed",
+    "pages": 400,
+    "publish_year": 2002
+  }, {
+    "id": 89,
+    "author": "Kenn Pieracci",
+    "book_name": "Scooby-Doo! Camp Scare",
+    "pages": 359,
+    "publish_year": 2009
+  }, {
+    "id": 90,
+    "author": "Rafael Hudson",
+    "book_name": "Dungeonmaster, The",
+    "pages": 293,
+    "publish_year": 2002
+  }, {
+    "id": 91,
+    "author": "Chas Cabrera",
+    "book_name": "Buck",
+    "pages": 540,
+    "publish_year": 1999
+  }, {
+    "id": 92,
+    "author": "Jamey Kenworth",
+    "book_name": "Dragon Ball: The Curse Of The Blood Rubies (Doragon bôru: Shenron no densetsu)",
+    "pages": 569,
+    "publish_year": 2011
+  }, {
+    "id": 93,
+    "author": "Arley Webborn",
+    "book_name": "Stella Does Tricks",
+    "pages": 620,
+    "publish_year": 1998
+  }, {
+    "id": 94,
+    "author": "Delaney Kitchingham",
+    "book_name": "Dreamchild",
+    "pages": 777,
+    "publish_year": 1991
+  }, {
+    "id": 95,
+    "author": "Geno Dyster",
+    "book_name": "Prom Night in Mississippi",
+    "pages": 985,
+    "publish_year": 2006
+  }, {
+    "id": 96,
+    "author": "Waldo Gopsill",
+    "book_name": "All Is Forgiven (Tout est pardonné)",
+    "pages": 334,
+    "publish_year": 2005
+  }, {
+    "id": 97,
+    "author": "Charlie Nevill",
+    "book_name": "Undercover Man",
+    "pages": 177,
+    "publish_year": 1988
+  }, {
+    "id": 98,
+    "author": "Lanette Stapele",
+    "book_name": "Thursday",
+    "pages": 402,
+    "publish_year": 2002
+  }, {
+    "id": 99,
+    "author": "Norrie Janecki",
+    "book_name": "Bound by Flesh ",
+    "pages": 736,
+    "publish_year": 2005
+  }, {
+    "id": 100,
+    "author": "Ennis Curtoys",
+    "book_name": "Satan Met a Lady",
+    "pages": 715,
+    "publish_year": 2006
+  }]
+  
