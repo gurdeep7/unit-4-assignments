@@ -1,0 +1,99 @@
+ use test
+switched to db test
+> db.users.insert({"first_name":"Felicity","last_name":"McCluskey","email":"fmccluskey0@e-recht24.de","gender":"Bigender","age":24})
+WriteResult({ "nInserted" : 1 })
+> db.users.insertMany([{
+...   "first_name": "Ermengarde",
+...   "last_name": "Le Provest",
+...   "email": "eleprovest0@huffingtonpost.com",
+...   "gender": "Bigender",
+...   "age": 62
+... }, {
+...   "first_name": "Dougy",
+...   "last_name": "Trace",
+...   "email": "dtrace1@examiner.com",
+...   "gender": "Polygender",
+...   "age": 56
+... }, {
+...   "first_name": "Blanch",
+...   "last_name": "Salters",
+...   "email": "bsalters2@a8.net",
+...   "gender": "Non-binary",
+...   "age": 19
+... }, {
+...   "first_name": "Reynard",
+...   "last_name": "Motten",
+...   "email": "rmotten3@xing.com",
+...   "gender": "Genderqueer",
+...   "age": 43
+... }, {
+...   "first_name": "Susanne",
+...   "last_name": "Wandrich",
+...   "email": "swandrich4@fda.gov",
+...   "gender": "Female",
+...   "age": 35
+... }, {
+...   "first_name": "Bernhard",
+...   "last_name": "Oldham",
+...   "email": "boldham5@skyrock.com",
+...   "gender": "Genderqueer",
+...   "age": 1
+... }, {
+...   "first_name": "Dulciana",
+...   "last_name": "Bodimeade",
+...   "email": "dbodimeade6@virginia.edu",
+...   "gender": "Non-binary",
+...   "age": 1
+... }, {
+...   "first_name": "Brooke",
+...   "last_name": "Poschel",
+...   "email": "bposchel7@ucla.edu",
+...   "gender": "Polygender",
+...   "age": 55
+... }, {
+...   "first_name": "Marcellina",
+...   "last_name": "Ryhorovich",
+...   "email": "mryhorovich8@cargocollective.com",
+...   "gender": "Bigender",
+...   "age": 48
+... }])
+{
+        "acknowledged" : true,
+        "insertedIds" : [
+                ObjectId("619d01814b8940db25d41a72"),
+                ObjectId("619d01814b8940db25d41a73"),
+                ObjectId("619d01814b8940db25d41a74"),
+                ObjectId("619d01814b8940db25d41a75"),
+                ObjectId("619d01814b8940db25d41a76"),
+                ObjectId("619d01814b8940db25d41a77"),
+                ObjectId("619d01814b8940db25d41a78"),
+                ObjectId("619d01814b8940db25d41a79"),
+                ObjectId("619d01814b8940db25d41a7a")
+        ]
+}
+> db.users.update({'first_name':'Brooke'},{$set:{'first_name':'mongo'}})
+WriteResult({ "nMatched" : 1, "nUpserted" : 0, "nModified" : 1 })
+> db.users.updateMany({age:{$gt:60}},{$set:{age:"senior citizen"}})
+{ "acknowledged" : true, "matchedCount" : 1, "modifiedCount" : 1 }
+> db.users.updateMany({age:{$gt:50}},{$set:{age:"senior citizen"}})
+{ "acknowledged" : true, "matchedCount" : 2, "modifiedCount" : 2 }
+> db.users.remove({first_name:"mongo"}
+... )
+WriteResult({ "nRemoved" : 1 })
+> db.user.deleteOne({age:"senior citizen"})
+{ "acknowledged" : true, "deletedCount" : 0 }
+> db.user.deleteOne({'age':"senior citizen"})
+{ "acknowledged" : true, "deletedCount" : 0 }
+> db.user.deleteOne({'age':1})
+{ "acknowledged" : true, "deletedCount" : 0 }
+> db.users.deleteOne({'age':"senior citizen"})
+{ "acknowledged" : true, "deletedCount" : 1 }
+> db.users.deleteMany({age:1})
+{ "acknowledged" : true, "deletedCount" : 2 }
+> db.dropDatabase
+function(writeConcern) {
+    return this._dbCommand(
+        {dropDatabase: 1, writeConcern: writeConcern ? writeConcern : _defaultWriteConcern});
+}
+> db.dropDatabase()
+{ "ok" : 1 }
