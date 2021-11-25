@@ -1,0 +1,986 @@
+Microsoft Windows [Version 10.0.19044.1348]
+(c) Microsoft Corporation. All rights reserved.
+
+C:\Users\great>mongo
+MongoDB shell version v5.0.4
+connecting to: mongodb://127.0.0.1:27017/?compressors=disabled&gssapiServiceName=mongodb
+Implicit session: session { "id" : UUID("0581ec3c-97eb-4d03-952b-d9cd4b315ba6") }
+MongoDB server version: 5.0.4
+================
+Warning: the "mongo" shell has been superseded by "mongosh",
+which delivers improved usability and compatibility.The "mongo" shell has been deprecated and will be removed in
+an upcoming release.
+For installation instructions, see
+https://docs.mongodb.com/mongodb-shell/install/
+================
+---
+The server generated these startup warnings when booting:
+        2021-11-25T14:27:38.178+05:30: Access control is not enabled for the database. Read and write access to data and configuration is unrestricted
+---
+---
+        Enable MongoDB's free cloud-based monitoring service, which will then receive and display
+        metrics about your deployment (disk utilization, CPU, operation statistics, etc).
+
+        The monitoring data will be available on a MongoDB website with a unique URL accessible to you
+        and anyone you share the URL with. MongoDB may use this information to make product
+        improvements and to suggest MongoDB products and deployment options to you.
+
+        To enable free monitoring, run the following command: db.enableFreeMonitoring()
+        To permanently disable this reminder, run the following command: db.disableFreeMonitoring()
+---
+> use movies
+switched to db movies
+> dp.dropBase
+uncaught exception: ReferenceError: dp is not defined :
+@(shell):1:1
+> dp.dropDatabase
+uncaught exception: ReferenceError: dp is not defined :
+@(shell):1:1
+> dp.dropDatabase()
+uncaught exception: ReferenceError: dp is not defined :
+@(shell):1:1
+> db.dropDatabase()
+{ "ok" : 1 }
+> use movie
+switched to db movie
+> db.movies.insert(1)
+Error: argument to bsonsize has to be an object :
+addToOperationsList@src/mongo/shell/bulk_api.js:615:28
+Bulk/this.insert@src/mongo/shell/bulk_api.js:658:20
+DBCollection.prototype.insert@src/mongo/shell/collection.js:320:13
+@(shell):1:1
+> db.movies.insert({1})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:19
+> db.movies.insert({id:1})
+WriteResult({ "nInserted" : 1 })
+> db.movies.find({movie_name:"Blankman"})
+{ "_id" : ObjectId("619fb542a7cf18fb0a989fef"), "id" : 4, "movie_name" : "Blankman", "movie_genre" : "Comedy", "year" : 2008, "budget" : 14083 }
+> db.movies.find({movie_name:{$ne:"Blankman"}}).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fec"),
+        "id" : 1,
+        "movie_name" : "Death Race 2000",
+        "movie_genre" : "Action|Sci-Fi",
+        "year" : 2003,
+        "budget" : 9139
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fed"),
+        "id" : 2,
+        "movie_name" : "Busses Roar (Buses Roar)",
+        "movie_genre" : "Drama|Romance|War",
+        "year" : 1996,
+        "budget" : 13571
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fee"),
+        "id" : 3,
+        "movie_name" : "Deaths of Ian Stone, The",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1995,
+        "budget" : 13455
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff0"),
+        "id" : 5,
+        "movie_name" : "Breathe In",
+        "movie_genre" : "Drama|Romance",
+        "year" : 2014,
+        "budget" : 13093
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff1"),
+        "id" : 6,
+        "movie_name" : "Peyton Place",
+        "movie_genre" : "Drama|Romance",
+        "year" : 1990,
+        "budget" : 17357
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff2"),
+        "id" : 7,
+        "movie_name" : "Roseland",
+        "movie_genre" : "Drama|Musical|Romance",
+        "year" : 1990,
+        "budget" : 14710
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff3"),
+        "id" : 8,
+        "movie_name" : "Glorious 39",
+        "movie_genre" : "Drama|Romance|Thriller|War",
+        "year" : 2012,
+        "budget" : 11746
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff4"),
+        "id" : 9,
+        "movie_name" : "Spider Forest (Geomi sup)",
+        "movie_genre" : "Drama|Horror|Mystery|Thriller",
+        "year" : 1993,
+        "budget" : 19939
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff5"),
+        "id" : 10,
+        "movie_name" : "Stone of Destiny",
+        "movie_genre" : "Adventure|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19157
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff6"),
+        "id" : 11,
+        "movie_name" : "Supergirl",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "year" : 2013,
+        "budget" : 9399
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff7"),
+        "id" : 12,
+        "movie_name" : "Broom-Stick Bunny",
+        "movie_genre" : "Animation|Children|Comedy",
+        "year" : 2000,
+        "budget" : 16261
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff8"),
+        "id" : 13,
+        "movie_name" : "Tales of Vesperia: The First Strike (Teiruzu obu vesuperia: The first strike)",
+        "movie_genre" : "Animation",
+        "year" : 2009,
+        "budget" : 13737
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff9"),
+        "id" : 14,
+        "movie_name" : "Happy People: A Year in the Taiga",
+        "movie_genre" : "Documentary",
+        "year" : 2018,
+        "budget" : 13905
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffa"),
+        "id" : 15,
+        "movie_name" : "Milk of Sorrow, The (Teta asustada, La)",
+        "movie_genre" : "Drama",
+        "year" : 2019,
+        "budget" : 9363
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffb"),
+        "id" : 16,
+        "movie_name" : "Noose, The (Petla)",
+        "movie_genre" : "Drama",
+        "year" : 2016,
+        "budget" : 11270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffc"),
+        "id" : 17,
+        "movie_name" : "Stage Beauty",
+        "movie_genre" : "Drama",
+        "year" : 2014,
+        "budget" : 12728
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffd"),
+        "id" : 18,
+        "movie_name" : "Blue Sunshine",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1990,
+        "budget" : 16330
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffe"),
+        "id" : 19,
+        "movie_name" : "Beyond the Gates of Splendor",
+        "movie_genre" : "Documentary",
+        "year" : 2000,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fff"),
+        "id" : 20,
+        "movie_name" : "Cold Storage",
+        "movie_genre" : "Thriller",
+        "year" : 1994,
+        "budget" : 9691
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a000"),
+        "id" : 21,
+        "movie_name" : "Klitschko",
+        "movie_genre" : "Documentary",
+        "year" : 1993,
+        "budget" : 17418
+}
+Type "it" for more
+> db.movies.find({budget:{$gt:19000}}).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff4"),
+        "id" : 9,
+        "movie_name" : "Spider Forest (Geomi sup)",
+        "movie_genre" : "Drama|Horror|Mystery|Thriller",
+        "year" : 1993,
+        "budget" : 19939
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff5"),
+        "id" : 10,
+        "movie_name" : "Stone of Destiny",
+        "movie_genre" : "Adventure|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19157
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a004"),
+        "id" : 25,
+        "movie_name" : "Monday Night Mayhem",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 19356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00f"),
+        "id" : 36,
+        "movie_name" : "Girl on the Train, The",
+        "movie_genre" : "Thriller",
+        "year" : 1999,
+        "budget" : 19861
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a02b"),
+        "id" : 64,
+        "movie_name" : "Employee of the Month",
+        "movie_genre" : "Comedy",
+        "year" : 2011,
+        "budget" : 19205
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a045"),
+        "id" : 90,
+        "movie_name" : "Sodom and Gomorrah",
+        "movie_genre" : "Adventure|Drama",
+        "year" : 2010,
+        "budget" : 19540
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a04d"),
+        "id" : 98,
+        "movie_name" : "Hallåhallå",
+        "movie_genre" : "Comedy",
+        "year" : 1991,
+        "budget" : 19253
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a051"),
+        "id" : 102,
+        "movie_name" : "White Dog",
+        "movie_genre" : "Drama|Horror|Thriller",
+        "year" : 1990,
+        "budget" : 19575
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a057"),
+        "id" : 108,
+        "movie_name" : "Vanilla Sky",
+        "movie_genre" : "Mystery|Romance|Sci-Fi|Thriller",
+        "year" : 2013,
+        "budget" : 19899
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a05d"),
+        "id" : 114,
+        "movie_name" : "Bo Burnham: Words, Words, Words",
+        "movie_genre" : "Comedy",
+        "year" : 2013,
+        "budget" : 19518
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a05e"),
+        "id" : 115,
+        "movie_name" : "Kommissarie Späck",
+        "movie_genre" : "Comedy",
+        "year" : 1995,
+        "budget" : 19656
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a07c"),
+        "id" : 145,
+        "movie_name" : "Making Mr. Right",
+        "movie_genre" : "Comedy|Romance|Sci-Fi",
+        "year" : 1994,
+        "budget" : 19212
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a082"),
+        "id" : 151,
+        "movie_name" : "Swimming with Sharks",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2010,
+        "budget" : 19440
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a091"),
+        "id" : 166,
+        "movie_name" : "Psych-Out",
+        "movie_genre" : "Drama|Musical|Thriller",
+        "year" : 2019,
+        "budget" : 19682
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a093"),
+        "id" : 168,
+        "movie_name" : "How Bruce Lee Changed the World",
+        "movie_genre" : "Documentary",
+        "year" : 2006,
+        "budget" : 19693
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a0a6"),
+        "id" : 187,
+        "movie_name" : "The Incident",
+        "movie_genre" : "Drama",
+        "year" : 2020,
+        "budget" : 19112
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a0af"),
+        "id" : 196,
+        "movie_name" : "Turistas",
+        "movie_genre" : "Adventure|Drama|Horror|Mystery|Thriller",
+        "year" : 2003,
+        "budget" : 19487
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a0c1"),
+        "id" : 214,
+        "movie_name" : "I Wake Up Screaming",
+        "movie_genre" : "Crime|Film-Noir|Mystery|Romance|Thriller",
+        "year" : 1993,
+        "budget" : 19178
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a0c3"),
+        "id" : 216,
+        "movie_name" : "40-Year-Old Virgin, The",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 2013,
+        "budget" : 19546
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a0d9"),
+        "id" : 238,
+        "movie_name" : "Perrier's Bounty",
+        "movie_genre" : "Action|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19476
+}
+Type "it" for more
+> db.movies.find({$and:[{year:{$gt:2000}}]}).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fec"),
+        "id" : 1,
+        "movie_name" : "Death Race 2000",
+        "movie_genre" : "Action|Sci-Fi",
+        "year" : 2003,
+        "budget" : 9139
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fef"),
+        "id" : 4,
+        "movie_name" : "Blankman",
+        "movie_genre" : "Comedy",
+        "year" : 2008,
+        "budget" : 14083
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff0"),
+        "id" : 5,
+        "movie_name" : "Breathe In",
+        "movie_genre" : "Drama|Romance",
+        "year" : 2014,
+        "budget" : 13093
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff3"),
+        "id" : 8,
+        "movie_name" : "Glorious 39",
+        "movie_genre" : "Drama|Romance|Thriller|War",
+        "year" : 2012,
+        "budget" : 11746
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff5"),
+        "id" : 10,
+        "movie_name" : "Stone of Destiny",
+        "movie_genre" : "Adventure|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19157
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff6"),
+        "id" : 11,
+        "movie_name" : "Supergirl",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "year" : 2013,
+        "budget" : 9399
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff8"),
+        "id" : 13,
+        "movie_name" : "Tales of Vesperia: The First Strike (Teiruzu obu vesuperia: The first strike)",
+        "movie_genre" : "Animation",
+        "year" : 2009,
+        "budget" : 13737
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff9"),
+        "id" : 14,
+        "movie_name" : "Happy People: A Year in the Taiga",
+        "movie_genre" : "Documentary",
+        "year" : 2018,
+        "budget" : 13905
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffa"),
+        "id" : 15,
+        "movie_name" : "Milk of Sorrow, The (Teta asustada, La)",
+        "movie_genre" : "Drama",
+        "year" : 2019,
+        "budget" : 9363
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffb"),
+        "id" : 16,
+        "movie_name" : "Noose, The (Petla)",
+        "movie_genre" : "Drama",
+        "year" : 2016,
+        "budget" : 11270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffc"),
+        "id" : 17,
+        "movie_name" : "Stage Beauty",
+        "movie_genre" : "Drama",
+        "year" : 2014,
+        "budget" : 12728
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a003"),
+        "id" : 24,
+        "movie_name" : "Amores Perros (Love's a Bitch)",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 2010,
+        "budget" : 18077
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a004"),
+        "id" : 25,
+        "movie_name" : "Monday Night Mayhem",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 19356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a005"),
+        "id" : 26,
+        "movie_name" : "Four Weddings and a Funeral",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 2019,
+        "budget" : 12356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a007"),
+        "id" : 28,
+        "movie_name" : "Haunted Echoes",
+        "movie_genre" : "Thriller",
+        "year" : 2018,
+        "budget" : 18700
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a008"),
+        "id" : 29,
+        "movie_name" : "Service (Serbis)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18671
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00b"),
+        "id" : 32,
+        "movie_name" : "100 Men and a Girl (One Hundred Men and a Girl)",
+        "movie_genre" : "Comedy",
+        "year" : 2015,
+        "budget" : 10259
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00c"),
+        "id" : 33,
+        "movie_name" : "Madam Satan",
+        "movie_genre" : "Comedy|Musical|Romance",
+        "year" : 2008,
+        "budget" : 18949
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a010"),
+        "id" : 37,
+        "movie_name" : "Mr. North",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 12270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a011"),
+        "id" : 38,
+        "movie_name" : " Days of Summer",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "year" : 2001,
+        "budget" : 17978
+}
+Type "it" for more
+> db.movies.find({$and:[{year:{$gt:2000}},{$budget:{$gt:10000}}]}).pretty()
+Error: error: {
+        "ok" : 0,
+        "errmsg" : "unknown top level operator: $budget. If you have a field name that starts with a '$' symbol, consider using $getField or $setField.",
+        "code" : 2,
+        "codeName" : "BadValue"
+}
+> db.movies.find({$and:[{year:{$gt:2000}},{budget:{$gt:10000}}]}).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fef"),
+        "id" : 4,
+        "movie_name" : "Blankman",
+        "movie_genre" : "Comedy",
+        "year" : 2008,
+        "budget" : 14083
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff0"),
+        "id" : 5,
+        "movie_name" : "Breathe In",
+        "movie_genre" : "Drama|Romance",
+        "year" : 2014,
+        "budget" : 13093
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff3"),
+        "id" : 8,
+        "movie_name" : "Glorious 39",
+        "movie_genre" : "Drama|Romance|Thriller|War",
+        "year" : 2012,
+        "budget" : 11746
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff5"),
+        "id" : 10,
+        "movie_name" : "Stone of Destiny",
+        "movie_genre" : "Adventure|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19157
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff8"),
+        "id" : 13,
+        "movie_name" : "Tales of Vesperia: The First Strike (Teiruzu obu vesuperia: The first strike)",
+        "movie_genre" : "Animation",
+        "year" : 2009,
+        "budget" : 13737
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff9"),
+        "id" : 14,
+        "movie_name" : "Happy People: A Year in the Taiga",
+        "movie_genre" : "Documentary",
+        "year" : 2018,
+        "budget" : 13905
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffb"),
+        "id" : 16,
+        "movie_name" : "Noose, The (Petla)",
+        "movie_genre" : "Drama",
+        "year" : 2016,
+        "budget" : 11270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffc"),
+        "id" : 17,
+        "movie_name" : "Stage Beauty",
+        "movie_genre" : "Drama",
+        "year" : 2014,
+        "budget" : 12728
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a003"),
+        "id" : 24,
+        "movie_name" : "Amores Perros (Love's a Bitch)",
+        "movie_genre" : "Drama|Thriller",
+        "year" : 2010,
+        "budget" : 18077
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a004"),
+        "id" : 25,
+        "movie_name" : "Monday Night Mayhem",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 19356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a005"),
+        "id" : 26,
+        "movie_name" : "Four Weddings and a Funeral",
+        "movie_genre" : "Comedy|Romance",
+        "year" : 2019,
+        "budget" : 12356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a007"),
+        "id" : 28,
+        "movie_name" : "Haunted Echoes",
+        "movie_genre" : "Thriller",
+        "year" : 2018,
+        "budget" : 18700
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a008"),
+        "id" : 29,
+        "movie_name" : "Service (Serbis)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18671
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00b"),
+        "id" : 32,
+        "movie_name" : "100 Men and a Girl (One Hundred Men and a Girl)",
+        "movie_genre" : "Comedy",
+        "year" : 2015,
+        "budget" : 10259
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00c"),
+        "id" : 33,
+        "movie_name" : "Madam Satan",
+        "movie_genre" : "Comedy|Musical|Romance",
+        "year" : 2008,
+        "budget" : 18949
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a010"),
+        "id" : 37,
+        "movie_name" : "Mr. North",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 12270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a011"),
+        "id" : 38,
+        "movie_name" : " Days of Summer",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "year" : 2001,
+        "budget" : 17978
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a012"),
+        "id" : 39,
+        "movie_name" : "Gate, The",
+        "movie_genre" : "Horror",
+        "year" : 2007,
+        "budget" : 10036
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a016"),
+        "id" : 43,
+        "movie_name" : "Parents",
+        "movie_genre" : "Comedy|Drama|Horror",
+        "year" : 2016,
+        "budget" : 13173
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a017"),
+        "id" : 44,
+        "movie_name" : "Fawlty Towers (1975-1979)",
+        "movie_genre" : "Comedy",
+        "year" : 2001,
+        "budget" : 17750
+}
+Type "it" for more
+> db.movies.find({$and:[{year:{$gt:2000}},{year:{$lt:2010}}]}).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fec"),
+        "id" : 1,
+        "movie_name" : "Death Race 2000",
+        "movie_genre" : "Action|Sci-Fi",
+        "year" : 2003,
+        "budget" : 9139
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fef"),
+        "id" : 4,
+        "movie_name" : "Blankman",
+        "movie_genre" : "Comedy",
+        "year" : 2008,
+        "budget" : 14083
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff5"),
+        "id" : 10,
+        "movie_name" : "Stone of Destiny",
+        "movie_genre" : "Adventure|Comedy|Crime|Drama",
+        "year" : 2003,
+        "budget" : 19157
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff8"),
+        "id" : 13,
+        "movie_name" : "Tales of Vesperia: The First Strike (Teiruzu obu vesuperia: The first strike)",
+        "movie_genre" : "Animation",
+        "year" : 2009,
+        "budget" : 13737
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a004"),
+        "id" : 25,
+        "movie_name" : "Monday Night Mayhem",
+        "movie_genre" : "Drama",
+        "year" : 2004,
+        "budget" : 19356
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a008"),
+        "id" : 29,
+        "movie_name" : "Service (Serbis)",
+        "movie_genre" : "Drama",
+        "year" : 2005,
+        "budget" : 18671
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a00c"),
+        "id" : 33,
+        "movie_name" : "Madam Satan",
+        "movie_genre" : "Comedy|Musical|Romance",
+        "year" : 2008,
+        "budget" : 18949
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a010"),
+        "id" : 37,
+        "movie_name" : "Mr. North",
+        "movie_genre" : "Comedy|Drama",
+        "year" : 2002,
+        "budget" : 12270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a011"),
+        "id" : 38,
+        "movie_name" : " Days of Summer",
+        "movie_genre" : "Comedy|Drama|Romance",
+        "year" : 2001,
+        "budget" : 17978
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a012"),
+        "id" : 39,
+        "movie_name" : "Gate, The",
+        "movie_genre" : "Horror",
+        "year" : 2007,
+        "budget" : 10036
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a017"),
+        "id" : 44,
+        "movie_name" : "Fawlty Towers (1975-1979)",
+        "movie_genre" : "Comedy",
+        "year" : 2001,
+        "budget" : 17750
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a019"),
+        "id" : 46,
+        "movie_name" : "Bad Blood: A Cautionary Tale ",
+        "movie_genre" : "Documentary",
+        "year" : 2002,
+        "budget" : 12390
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a01f"),
+        "id" : 52,
+        "movie_name" : "Bingo",
+        "movie_genre" : "Adventure|Comedy",
+        "year" : 2008,
+        "budget" : 11497
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a020"),
+        "id" : 53,
+        "movie_name" : "Naked Man, The",
+        "movie_genre" : "Drama",
+        "year" : 2009,
+        "budget" : 17497
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a026"),
+        "id" : 59,
+        "movie_name" : "Real McCoy, The",
+        "movie_genre" : "Action|Crime|Drama|Thriller",
+        "year" : 2008,
+        "budget" : 11813
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a028"),
+        "id" : 61,
+        "movie_name" : "Youngblood",
+        "movie_genre" : "Action|Drama",
+        "year" : 2007,
+        "budget" : 10194
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a030"),
+        "id" : 69,
+        "movie_name" : "Jubilee",
+        "movie_genre" : "Drama",
+        "year" : 2008,
+        "budget" : 14871
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a034"),
+        "id" : 73,
+        "movie_name" : "Things to Come",
+        "movie_genre" : "Sci-Fi",
+        "year" : 2009,
+        "budget" : 12836
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a038"),
+        "id" : 77,
+        "movie_name" : "Vacancy 2: The First Cut",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 2009,
+        "budget" : 18655
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a98a03a"),
+        "id" : 79,
+        "movie_name" : "Holy Innocents, The (Santos inocentes, Los)",
+        "movie_genre" : "Drama",
+        "year" : 2007,
+        "budget" : 18469
+}
+Type "it" for more
+> db.movies.find().skip(10).limit(10).pretty()
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff6"),
+        "id" : 11,
+        "movie_name" : "Supergirl",
+        "movie_genre" : "Action|Adventure|Fantasy",
+        "year" : 2013,
+        "budget" : 9399
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff7"),
+        "id" : 12,
+        "movie_name" : "Broom-Stick Bunny",
+        "movie_genre" : "Animation|Children|Comedy",
+        "year" : 2000,
+        "budget" : 16261
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff8"),
+        "id" : 13,
+        "movie_name" : "Tales of Vesperia: The First Strike (Teiruzu obu vesuperia: The first strike)",
+        "movie_genre" : "Animation",
+        "year" : 2009,
+        "budget" : 13737
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ff9"),
+        "id" : 14,
+        "movie_name" : "Happy People: A Year in the Taiga",
+        "movie_genre" : "Documentary",
+        "year" : 2018,
+        "budget" : 13905
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffa"),
+        "id" : 15,
+        "movie_name" : "Milk of Sorrow, The (Teta asustada, La)",
+        "movie_genre" : "Drama",
+        "year" : 2019,
+        "budget" : 9363
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffb"),
+        "id" : 16,
+        "movie_name" : "Noose, The (Petla)",
+        "movie_genre" : "Drama",
+        "year" : 2016,
+        "budget" : 11270
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffc"),
+        "id" : 17,
+        "movie_name" : "Stage Beauty",
+        "movie_genre" : "Drama",
+        "year" : 2014,
+        "budget" : 12728
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffd"),
+        "id" : 18,
+        "movie_name" : "Blue Sunshine",
+        "movie_genre" : "Horror|Thriller",
+        "year" : 1990,
+        "budget" : 16330
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989ffe"),
+        "id" : 19,
+        "movie_name" : "Beyond the Gates of Splendor",
+        "movie_genre" : "Documentary",
+        "year" : 2000,
+        "budget" : 9277
+}
+{
+        "_id" : ObjectId("619fb542a7cf18fb0a989fff"),
+        "id" : 20,
+        "movie_name" : "Cold Storage",
+        "movie_genre" : "Thriller",
+        "year" : 1994,
+        "budget" : 9691
+}
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{movie_genre}})
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:47
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{"movie_genre"}})
+uncaught exception: SyntaxError: missing : after property id :
+@(shell):1:59
+> db.movies.upadateMany({id:{$lte:10}},{$unset:movie_genre})
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:39
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{movie_genre:}})
+uncaught exception: SyntaxError: expected expression, got '}' :
+@(shell):1:58
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{movie_genre:})
+...
+...
+> db.movies.upadateMany({id:{$lte:10}},{$unset:movie_genre})
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:39
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{movie_genre}})
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:47
+> db.movies.upadateMany({id:{$lte:10}},{$unset:{movie_genre:""}})
+uncaught exception: TypeError: db.movies.upadateMany is not a function :
+@(shell):1:1
+> db.movies.updateMany({id:{$lte:10}},{$unset:{movie_genre}})
+uncaught exception: ReferenceError: movie_genre is not defined :
+@(shell):1:46
+> db.movies.updateMany({id:{$lte:10}},{$unset:{movie_genre:""}})
+{ "acknowledged" : true, "matchedCount" : 10, "modifiedCount" : 10 }
+>
