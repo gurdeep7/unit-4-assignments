@@ -186,7 +186,7 @@ app.get("/books",async (req,res)=>{
 app.patch("/book/:id", async (req,res)=>{
 
     try{
-        const Book = await book.findByIdAndUpdate(req.params.id,req.params.body).lean().exec()
+        const Book = await book.findByIdAndUpdate(req.params.id,req.body).lean().exec()
 
         res.status(201).send(Book)
     }catch(err){

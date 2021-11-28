@@ -1,10 +1,6 @@
-const express = require("express")
+const app = require("./index")
 
 const connect = require("./config/db")
-
-const app = express()
-
-app.use(express.json())
 
 app.listen(2345, async function(){
 
