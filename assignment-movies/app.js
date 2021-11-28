@@ -1,4 +1,4 @@
-const e = require("express")
+
 const express = require("express")
 
 const mongoose = require("mongoose")
@@ -12,7 +12,7 @@ const moviesSchema = new mongoose.Schema({
 
     movie_name : {type: String, required: true},
 
-    movie_name : {type: String, required: false},
+    movie_genre : {type: String, required: false},
 
     year:{type: Number, required:true},
 
